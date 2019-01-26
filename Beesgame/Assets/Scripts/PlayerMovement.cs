@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float forceAmount = 1.0f;
     public float jumpForceModifier = 10.0f;
     public float moveForceModfier = 5.0f;
+    public float tilt = 1.0f;
 
 
     void Start()
@@ -23,13 +24,18 @@ public class PlayerMovement : MonoBehaviour
         //Store the current horizontal input in the float moveHorizontal.
         float moveHorizontal = Input.GetAxis("Horizontal");
 
+        playerRB2D.rotation = playerRB2D.velocity.x * -tilt;
+
+        // change give it a little bit rotation
+
         //Use the two store floats to create a new Vector2 variable movement.
         Vector2 horizontalMovement = new Vector2(moveHorizontal, 0.0f);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButton("Jump"))
         {
             playerRB2D.AddForce(forceAmount * jumpForceModifier * Vector3.up);
         }
+
 
         //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         playerRB2D.AddForce(horizontalMovement * moveForceModfier * forceAmount);
