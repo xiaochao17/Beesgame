@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39ae6705a678f841be3e2f869082e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForceModifier: 15
-  moveForceModfier: 5
-  tilt: 10
+  forceAmount: 10
+  dashForceModifier: 1
+  tilt: 2
 --- !u!212 &734600591
 SpriteRenderer:
   m_ObjectHideFlags: 0
