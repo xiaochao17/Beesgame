@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            playerRB2D.AddForce(forceAmount * dashForceModifier * new Vector2 (movement.x, 0), ForceMode2D.Impulse);
+            playerRB2D.AddForce(forceAmount * dashForceModifier * new Vector2(movement.x, 0), ForceMode2D.Impulse);
         }
 
     }
