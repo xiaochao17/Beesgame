@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39ae6705a678f841be3e2f869082e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForceModifier: 15
-  moveForceModfier: 5
-  tilt: 10
+  forceAmount: 10
+  dashForceModifier: 0.5
+  tilt: 2
 --- !u!212 &734600591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -291,8 +291,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.1, y: 1.11}
-  m_Size: {x: 17.8, y: 8.44}
+  m_Offset: {x: 2.6, y: 1.11}
+  m_Size: {x: 9.84, y: 8.44}
   m_Direction: 1
 --- !u!1 &1189635400
 GameObject:
