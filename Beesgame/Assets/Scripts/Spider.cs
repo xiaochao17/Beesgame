@@ -7,6 +7,8 @@ public class Spider : MonoBehaviour {
     [SerializeField] GameObject spiderProjectile;
     [SerializeField] float missileSpeed;
     GameObject missile;
+    [SerializeField] Transform playerPosition;
+    Vector2 direction;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +16,7 @@ public class Spider : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         Fire();
 	}
 
@@ -23,11 +25,14 @@ public class Spider : MonoBehaviour {
         // TODO: can be changed to a set of key code
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            missile = Instantiate(spiderProjectile,
-                                            gameObject.transform.position,
-                                         Quaternion.identity) as GameObject;
-            //TODO: Chnage speed and direction (get player position)
-            missile.GetComponent<Rigidbody2D>().velocity = new Vector2(-3, missileSpeed);
+            Vector3 player = playerPosition.position;
+            print(player);
+            //direction = (playerPosition.position - gameObject.transform.position).normalized;
+            //missile = Instantiate(spiderProjectile,
+            //                                gameObject.transform.position,
+            //                             Quaternion.identity) as GameObject;
+            ////TODO: Chnage speed and direction (get player position)
+            //missile.GetComponent<Rigidbody2D>().velocity = direction*missileSpeed;
 
         }
 
