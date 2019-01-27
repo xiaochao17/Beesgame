@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4674977437894765863}
   - component: {fileID: 1307492818660416726}
   - component: {fileID: 4674977437894765862}
+  - component: {fileID: 4116879888449452489}
   m_Layer: 0
   m_Name: Bug
   m_TagString: Enemy
@@ -152,3 +153,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0.06, y: 0.26}
   m_Size: {x: 1, y: 0.42}
   m_Direction: 1
+--- !u!114 &4116879888449452489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674977437894765860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7029afd6384cf4f94f85d0e1821d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bugAnimator: {fileID: 0}

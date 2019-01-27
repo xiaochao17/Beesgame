@@ -8,16 +8,25 @@ public class BugMovement : MonoBehaviour
     private Rigidbody2D bugRB2D;
     private Collider2D bugCollider;
     private Vector2 bugDirection;
+    private bool ishit = false;
+    private Animator bugAnimator;
 
     public float bugSpeed = 1.0f;
+
+
     private void Start()
     {
         bugDirection = new Vector2 (1.0f, 0.0f);
+        bugAnimator = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
     {
-        transform.Translate(bugDirection * bugSpeed * Time.deltaTime);
+        ishit = bugAnimator.GetBool("isHit");
+        if (ishit == false)
+        {
+            transform.Translate(bugDirection * bugSpeed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

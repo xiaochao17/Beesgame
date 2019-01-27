@@ -19,7 +19,7 @@ public class Cooldown
 
     public bool TryUse()
     {
-        Debug.Log(_remainingSeconds);
+        // Debug.Log(_remainingSeconds);
         if (_remainingSeconds <= 0f)
         {
             _remainingSeconds = _initialSeconds;

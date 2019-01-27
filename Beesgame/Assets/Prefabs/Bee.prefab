@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2819608911718059645}
   m_Layer: 0
   m_Name: Bee
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   forceAmount: 20
   dashForceModifier: 1
   tilt: 2
-  tiltThreshold: 25
+  tiltThreshold: 7
 --- !u!70 &6686458497434275461
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -216,8 +216,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.12}
-  m_Size: {x: 1.5, y: 1}
+  m_Offset: {x: 0.11, y: 0.15}
+  m_Size: {x: 1.29, y: 0.83}
   m_Direction: 1
 --- !u!95 &6686458497434275462
 Animator:
