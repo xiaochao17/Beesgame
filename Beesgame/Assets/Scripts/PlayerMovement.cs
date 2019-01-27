@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        playerRB2D.rotation = playerRB2D.velocity.x * -tilt;
+        //playerRB2D.rotation = playerRB2D.velocity.x * -tilt;
 
         // change give it a little bit rotation
 

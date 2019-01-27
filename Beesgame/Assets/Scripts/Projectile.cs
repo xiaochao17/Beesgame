@@ -6,13 +6,13 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] GameObject missileExplode; 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Forest_Ground"){
-            Destroy(gameObject);
-            GameObject missile = Instantiate(missileExplode, transform.position, Quaternion.identity);
-            Destroy(missile, 1f);
-        }
+        //if (collider.gameObject.tag == "Forest_Ground"){
+        //    Destroy(gameObject);
+        //    //GameObject missile = Instantiate(missileExplode, transform.position, Quaternion.identity);
+        //    //Destroy(missile, 1f);
+        //}
 
     }
 }
