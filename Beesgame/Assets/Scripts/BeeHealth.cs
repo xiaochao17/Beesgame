@@ -13,7 +13,7 @@ public class BeeHealth : MonoBehaviour
     private readonly Cooldown _damageCooldown = new Cooldown(1);
     private readonly Dictionary<string, int> _tagToDelta = new Dictionary<string, int>
     {
-        {"Enemy", -1}
+        {"Enemy", -1},  {"Enemy2", -2}, {"Enemy3", -3}, {"Enemy4", -4}, {"Enemy5", -5 }
     }; 
 
     void Start()
