@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4426093933735379189}
   - component: {fileID: 7911077185726463358}
   - component: {fileID: 2815638627601477644}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spider_bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767d79aa8e6134265823473cd2279cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missileExplode: {fileID: 4685980732254664339, guid: 7b29a860f72074ac2bc4a927899d5b6b,
+  missileExplode: {fileID: 8482611086896659089, guid: c38a9efc2e8f44588aac243bafcdaf8e,
     type: 3}
 --- !u!61 &2815638627601477644
 BoxCollider2D:
@@ -127,7 +127,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

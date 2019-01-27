@@ -40,10 +40,9 @@ public class Spider : MonoBehaviour {
         {
             missile = Instantiate(spiderProjectile) as GameObject;
             missile.transform.position = gameObject.transform.position;
-            Debug.Log(Vector2.Angle(Vector2.right, directionToPlayer.normalized));
+            //Debug.Log(Vector2.Angle(Vector2.right, directionToPlayer.normalized));
             missile.transform.eulerAngles = Vector3.forward * (Vector2.SignedAngle(Vector2.right, directionToPlayer.normalized) + 180);
             missile.GetComponent<Rigidbody2D>().velocity = directionToPlayer.normalized * missileSpeed;
-            Destroy(missile, 2f);
 
         }
     }
