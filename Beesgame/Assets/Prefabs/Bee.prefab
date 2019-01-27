@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2819608911718059645}
   m_Layer: 0
   m_Name: Bee
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ SpriteRenderer:
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.5533333, y: 3.4133334}
+  m_Size: {x: 3.902857, y: 2.9257143}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

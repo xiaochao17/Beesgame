@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &297673798 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4674977437894765857, guid: 124521cd086a8db4eba6fa7d0829676a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1224140135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1189635400
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,31 +267,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4674977437894765856, guid: 124521cd086a8db4eba6fa7d0829676a,
+    - target: {fileID: 4116879888449452489, guid: 124521cd086a8db4eba6fa7d0829676a,
         type: 3}
-      propertyPath: m_SortingLayerID
-      value: 2030935159
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674977437894765856, guid: 124521cd086a8db4eba6fa7d0829676a,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674977437894765862, guid: 124521cd086a8db4eba6fa7d0829676a,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674977437894765862, guid: 124521cd086a8db4eba6fa7d0829676a,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674977437894765862, guid: 124521cd086a8db4eba6fa7d0829676a,
-        type: 3}
-      propertyPath: m_Size.x
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4116879888449452489, guid: 124521cd086a8db4eba6fa7d0829676a,
+        type: 3}
+      propertyPath: bugAnimator
+      value: 
+      objectReference: {fileID: 297673798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 124521cd086a8db4eba6fa7d0829676a, type: 3}
 --- !u!1 &1859412383
@@ -704,11 +695,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6686458496801526550, guid: 29e42b6d9ca27b243894fd415a26f1ff,
-        type: 3}
-      propertyPath: bulletSpeed
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e42b6d9ca27b243894fd415a26f1ff, type: 3}

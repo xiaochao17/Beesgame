@@ -35,18 +35,15 @@ public class PlayerMovement : MonoBehaviour
 
         playerRB2D.rotation = playerRB2D.velocity.x * -tilt;
 
-        // change give it a little bit rotation
-
         //Use the two store floats to create a new Vector2 variable movement.
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-
         //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         playerRB2D.AddForce(forceAmount * movement);
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            playerRB2D.AddForce(forceAmount * dashForceModifier * new Vector2(movement.x, 0), ForceMode2D.Impulse);
-        }
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    playerRB2D.AddForce(forceAmount * dashForceModifier * new Vector2(movement.x, 0), ForceMode2D.Impulse);
+        //}
 
         if (Mathf.Abs(moveHorizontal) > Mathf.Epsilon && playerRB2D.rotation * Mathf.Sign(transform.localScale.x) > tiltThreshold)
         {
@@ -56,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "friend")
