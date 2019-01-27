@@ -7,14 +7,30 @@ public class NarrativeTrigger : MonoBehaviour
 
     private GameObject player;
 
+    private float cameraZoom;
     private float moveDistance;
     private float moveSpeed;
-    private float startTime;
     private float elapsedTime;
+
     private Vector2 startPoint;
     private Vector2 endPoint;
     private Quaternion startAngle;
 
+
+    private Camera mainCamera;
+    private AudioSource characterConversation;
+
+    public GameObject character;
+    public AudioClip helloClip;
+    public AudioClip goodbyeClip;
+    public AudioClip playerClip;
+    public float timeBetweenConversation = 0.0f;
+
+    private void Start()
+    {
+        mainCamera = Camera.main;
+        characterConversation = gameObject.GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,9 +40,8 @@ public class NarrativeTrigger : MonoBehaviour
             player.GetComponent<PlayerMovement>().enabled = false;
             startAngle = player.transform.rotation;
             startPoint = player.transform.position;
-            moveDistance = gameObject.transform.parent.transform.position.y - player.transform.position.y;
+            moveDistance = character.transform.position.y - player.transform.position.y;
             endPoint = startPoint + new Vector2(0.0f, moveDistance);
-            startTime = Time.time;
             StartCoroutine("movePlayer");
         }
     }
@@ -40,16 +55,25 @@ public class NarrativeTrigger : MonoBehaviour
             player.transform.rotation = Quaternion.Lerp(startAngle, Quaternion.identity, elapsedTime);
             elapsedTime += Time.deltaTime;
             yield return null;
+
+            StartCoroutine("Conversation");
         }
     }
 
-    private void Update()
+    IEnumerator Conversation()
     {
-        if (elapsedTime >= 1)
-        {
-            // play animation
-            Debug.Log("Hi");
-        }
+        characterConversation.clip = helloClip;
+        characterConversation.Play();
+        yield return new WaitForSeconds(characterConversation.clip.length + timeBetweenConversation);
+        characterConversation.clip = playerClip;
+        characterConversation.Play();
+        yield return new WaitForSeconds(characterConversation.clip.length + timeBetweenConversation);
+        characterConversation.clip = goodbyeClip;
+        characterConversation.Play();
+        yield return new WaitForSeconds(characterConversation.clip.length + timeBetweenConversation);
+
+        player.GetComponent<PlayerMovement>().enabled = true;
+        Destroy(gameObject);
     }
 
 
