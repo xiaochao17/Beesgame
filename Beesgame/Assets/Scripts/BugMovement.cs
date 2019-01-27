@@ -29,6 +29,7 @@ public class BugMovement : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("BugStop"))
@@ -39,4 +40,6 @@ public class BugMovement : MonoBehaviour
             gameObject.transform.localScale = localScale;
         }
     }
+
+
 }

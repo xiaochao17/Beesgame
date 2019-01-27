@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] GameObject missileExplode; 
+    [SerializeField] GameObject missileExplode;
 
-    void OnCollisionEnter2D(Collision2D collision)
+
+    private void Awake()
     {
-        if (collision.gameObject.tag == "Forest_Ground"){
-            Destroy(gameObject);
-            GameObject missile = Instantiate(missileExplode, transform.position, Quaternion.identity);
-            Destroy(missile, 1f);
-        }
-
+        Destroy(gameObject, 2f);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+        GameObject missile = Instantiate(missileExplode, transform.position, Quaternion.identity);
+        Destroy(missile, 1f);
+    }
+
+
+
+
 }
