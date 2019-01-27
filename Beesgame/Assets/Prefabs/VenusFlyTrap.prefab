@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9197325786308560987}
   - component: {fileID: 9197325786308560986}
-  - component: {fileID: 867856975435933596}
   m_Layer: 0
   m_Name: GameObject (2)
-  m_TagString: Untagged
+  m_TagString: Enemy3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,19 +57,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &867856975435933596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9197325786308560980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2dca70776c5ed34397d26df7b3f78d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 4
 --- !u!1 &9197325786444233499
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +68,6 @@ GameObject:
   - component: {fileID: 9197325786444233496}
   - component: {fileID: 9197325786444233497}
   - component: {fileID: 9197325786444233498}
-  - component: {fileID: 9197325786444233503}
   m_Layer: 0
   m_Name: VenusFlyTrap
   m_TagString: Enemy3
@@ -99,7 +84,7 @@ Transform:
   m_GameObject: {fileID: 9197325786444233499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.233, y: 0, z: 0}
-  m_LocalScale: {x: 0.52245957, y: 0.50528, z: 0.50528}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 0.50528}
   m_Children:
   - {fileID: 9197325786558278249}
   - {fileID: 9197325786308560987}
@@ -143,7 +128,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed5344b095f3447cf824ef5f0e1a86ad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b137f2c694ac4de0a79f72b25da9508, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -173,19 +158,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9197325786444233503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9197325786444233499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2dca70776c5ed34397d26df7b3f78d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 4
 --- !u!1 &9197325786558278250
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,10 +168,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9197325786558278249}
   - component: {fileID: 9197325786558278248}
-  - component: {fileID: 7284888207829630867}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Enemy3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,16 +215,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7284888207829630867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9197325786558278250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2dca70776c5ed34397d26df7b3f78d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 4
