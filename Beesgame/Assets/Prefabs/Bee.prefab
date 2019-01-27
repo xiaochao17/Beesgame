@@ -120,7 +120,7 @@ MonoBehaviour:
   forceAmount: 20
   dashForceModifier: 1
   tilt: 2
-  tiltThreshold: 25
+  tiltThreshold: 8
 --- !u!70 &6686458497434275461
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

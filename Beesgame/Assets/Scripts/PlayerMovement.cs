@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float forceAmount = 1.0f;
     public float dashForceModifier = 5.0f;
     public float tilt = 1.0f;
-    public float tiltThreshold = 25f;
+    public float tiltThreshold;
 
 
 
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        //playerRB2D.rotation = playerRB2D.velocity.x * -tilt;
+        playerRB2D.rotation = playerRB2D.velocity.x * -tilt;
 
         // change give it a little bit rotation
 
