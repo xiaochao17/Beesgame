@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BugStop
   - Enemy
+  - Enemy3
+  - friend
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     public float dashForceModifier = 5.0f;
     public float tilt = 1.0f;
     public float tiltThreshold;
-
 
 
     void Start()
@@ -48,5 +48,12 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "friend")
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }
