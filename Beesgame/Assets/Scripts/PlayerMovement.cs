@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float forceAmount = 1.0f;
     public float dashForceModifier = 5.0f;
     public float tilt = 1.0f;
+    public float tiltThreshold = 25f;
+
 
 
     void Start()
@@ -37,6 +39,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             playerRB2D.AddForce(forceAmount * dashForceModifier * new Vector2(movement.x, 0), ForceMode2D.Impulse);
+        }
+
+        Debug.Log(playerRB2D.rotation);
+
+        if (Mathf.Abs(moveHorizontal) > Mathf.Epsilon && playerRB2D.rotation * Mathf.Sign(transform.localScale.x) > tiltThreshold)
+        {
+            var localScale = transform.localScale;
+            localScale.x = moveHorizontal > 0 ? 1 : -1;
+            transform.localScale = localScale;
         }
 
     }
