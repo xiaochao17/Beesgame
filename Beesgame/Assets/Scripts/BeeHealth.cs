@@ -26,7 +26,16 @@ public class BeeHealth : MonoBehaviour
         _damageCooldown.AddRemainingSeconds(-Time.deltaTime);
         
         var color = spriteRenderer.color;
-        color.a = _damageCooldown.CanUse() ? 1 : 0.5f;
+        if (_damageCooldown.CanUse())
+        {
+            color.a = 1;
+        }
+        else
+        {
+            var time = Time.time % 0.25f;
+            color.a = time / 0.125f > 0.5f ? 0.5f : 1f;
+        }
+        
         spriteRenderer.color = color;
     }
 
