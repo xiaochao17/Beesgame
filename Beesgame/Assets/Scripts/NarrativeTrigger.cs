@@ -47,6 +47,7 @@ public class NarrativeTrigger : MonoBehaviour
     {
         if (elapsedTime >= 1)
         {
+            // play animation
             Debug.Log("Hi");
         }
     }

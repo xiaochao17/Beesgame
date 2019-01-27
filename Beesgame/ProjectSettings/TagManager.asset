@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Enemy3
   - friend
+  - Forest_Ground
+  - NarrativeTrigger
+  - Enemy1
+  - Enemy2
   layers:
   - Default
   - TransparentFX

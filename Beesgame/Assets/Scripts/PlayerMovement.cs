@@ -30,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
 
         //Use the two store floats to create a new Vector2 variable movement.
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-
         //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         playerRB2D.AddForce(forceAmount * movement);
 
@@ -47,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "friend")
