@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b400e3076540a4418d38ec208875599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 6686458497434275483}
   healthBar: {fileID: 6716813727339842802}
   maxValue: 5
 --- !u!1 &6716813727339842802

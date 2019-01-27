@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BeeHealth : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject healthBar;
     [SerializeField] private int maxValue;
     private int _value;
@@ -23,6 +24,19 @@ public class BeeHealth : MonoBehaviour
     void Update()
     {
         _damageCooldown.AddRemainingSeconds(-Time.deltaTime);
+        
+        var color = spriteRenderer.color;
+        if (_damageCooldown.CanUse())
+        {
+            color.a = 1;
+        }
+        else
+        {
+            var time = Time.time % 0.25f;
+            color.a = time / 0.125f > 0.5f ? 0.5f : 1f;
+        }
+        
+        spriteRenderer.color = color;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

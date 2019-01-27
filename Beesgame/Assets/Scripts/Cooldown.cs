@@ -17,10 +17,14 @@ public class Cooldown
         Mathf.Clamp(_remainingSeconds, 0f, Mathf.Infinity);
     }
 
+    public bool CanUse()
+    {
+        return _remainingSeconds <= 0f;
+    }
+
     public bool TryUse()
     {
-        Debug.Log(_remainingSeconds);
-        if (_remainingSeconds <= 0f)
+        if (CanUse())
         {
             _remainingSeconds = _initialSeconds;
             return true;
