@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
             playerRB2D.AddForce(forceAmount * dashForceModifier * new Vector2(movement.x, 0), ForceMode2D.Impulse);
         }
 
-        Debug.Log(playerRB2D.rotation);
+        //Debug.Log(playerRB2D.rotation);
 
         if (Mathf.Abs(moveHorizontal) > Mathf.Epsilon && playerRB2D.rotation * Mathf.Sign(transform.localScale.x) > tiltThreshold)
         {
