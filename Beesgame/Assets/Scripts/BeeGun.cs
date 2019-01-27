@@ -19,7 +19,6 @@ public class BeeGun : MonoBehaviour
             var direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition )- position).normalized;
             var bullet = Instantiate(bulletPrefab);
             bullet.transform.position = position;
-            Debug.Log(position);
             bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
         }
     }
