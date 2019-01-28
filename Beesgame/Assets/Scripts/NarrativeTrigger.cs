@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-
+using UnityEngine.SceneManagement;
 
 public class NarrativeTrigger : MonoBehaviour
 {
@@ -113,6 +113,11 @@ public class NarrativeTrigger : MonoBehaviour
             yield return null;
         }
 
+        FriendCounter.Instance.count += 1;
+        if (FriendCounter.Instance.count == 3)
+        {
+            SceneManager.LoadScene("Ending");
+        }
         Destroy(gameObject);
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -471,12 +471,12 @@ PrefabInstance:
     - target: {fileID: 2508962440278853960, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 189
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 2508962440278853960, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11.4
+      value: -38
       objectReference: {fileID: 0}
     - target: {fileID: 2508962440278854071, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
@@ -511,12 +511,12 @@ PrefabInstance:
     - target: {fileID: 2508962440288838302, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 189.00002
+      value: 250.00003
       objectReference: {fileID: 0}
     - target: {fileID: 2508962440288838302, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -105.9
+      value: -132.50002
       objectReference: {fileID: 0}
     - target: {fileID: 2508962440288838301, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
@@ -551,12 +551,12 @@ PrefabInstance:
     - target: {fileID: 2508962439977918552, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 189.00002
+      value: 250.00003
       objectReference: {fileID: 0}
     - target: {fileID: 2508962439977918552, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -58.80001
+      value: -85.400024
       objectReference: {fileID: 0}
     - target: {fileID: 2508962439977918535, guid: c15f9a4b7529245c49020987421e2141,
         type: 3}

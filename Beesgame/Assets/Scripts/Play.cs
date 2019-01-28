@@ -10,7 +10,7 @@ public class Play : MonoBehaviour
     {
 
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
     }
 
    

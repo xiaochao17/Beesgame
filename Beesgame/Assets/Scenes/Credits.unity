@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -446,5 +446,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2220437922779364374, guid: b80e862a6c9b24e039053b29b3b82fb9,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2220437922414661161, guid: b80e862a6c9b24e039053b29b3b82fb9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -147.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2220437922414661161, guid: b80e862a6c9b24e039053b29b3b82fb9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 122.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2220437922414661167, guid: b80e862a6c9b24e039053b29b3b82fb9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 13725513caf6242c9b5550f09b23a21b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80e862a6c9b24e039053b29b3b82fb9, type: 3}
