@@ -5,8 +5,21 @@ using UnityEngine.UI;
 
 public class EndingSlideshow : MonoBehaviour
 {
-    private const float FadeDuration = 0.25f;
-    private readonly float[] _slideDurations = { 2f, 2f };
+    private const float FadeDuration = 0.4f;
+    private readonly float[] _slideDurations =
+    {
+        3f, // friends 
+        5f, // rain starts
+        1f, // lightning
+        4f, // rain again
+        4f, // hive falls
+        5f, // hive fall close up
+        5f, // oh no
+        4f, // top down broken
+        4f, // tap
+        4f, // friends
+        4f, // blackout
+    };
     private Image[] _images;
     
     void Start()
