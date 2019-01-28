@@ -18,7 +18,8 @@ public class EndingSlideshow : MonoBehaviour
         4f, // top down broken
         4f, // tap
         4f, // friends
-        4f, // blackout
+        1f, // blackout
+        4f, // credits
     };
     private Image[] _images;
     
