@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4426093933735379189}
   - component: {fileID: 7911077185726463358}
   - component: {fileID: 2815638627601477644}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: spider_bullet
   m_TagString: Enemy
   m_Icon: {fileID: 0}
