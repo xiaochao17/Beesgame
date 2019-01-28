@@ -24,8 +24,8 @@ TagManager:
   - PostProcessing
   - Backgound
   - CameraConfine
-  - Projectile
-  - 
+  - Enemy
+  - bullet
   - 
   - 
   - 

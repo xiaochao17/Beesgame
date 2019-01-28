@@ -6,11 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] AudioClip buzzSound;
-    [SerializeField] AudioClip landSound;
-    [SerializeField] AudioClip friendSound;
-    [SerializeField] AudioClip honeyDrink;
-    [SerializeField] AudioClip pickUp;
+
 
 
     // Use this for initialization

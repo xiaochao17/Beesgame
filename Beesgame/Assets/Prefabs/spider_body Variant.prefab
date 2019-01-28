@@ -79,7 +79,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &5560022871213817490
+--- !u!50 &5189903299169748390
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 2693345530085932839, guid: 61b1c71ee3c2b470c9d4db61711534a2,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2693345530085932839, guid: 61b1c71ee3c2b470c9d4db61711534a2,
         type: 3}
