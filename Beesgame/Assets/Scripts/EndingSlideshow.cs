@@ -12,8 +12,8 @@ public class EndingSlideshow : MonoBehaviour
         5f, // rain starts
         1f, // lightning
         4f, // rain again
-        4f, // hive falls
-        5f, // hive fall close up
+        5f, // hive falls
+        4f, // hive fall close up
         5f, // oh no
         4f, // top down broken
         4f, // tap
