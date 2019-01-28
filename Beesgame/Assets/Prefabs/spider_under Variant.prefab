@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: spider_under Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 350958791191994988, guid: 704f15fa54b104dc29979d05d2534285,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2886464248430760177, guid: 704f15fa54b104dc29979d05d2534285,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -102,6 +107,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5560022871213817490, guid: 704f15fa54b104dc29979d05d2534285,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 110049027668861152, guid: 704f15fa54b104dc29979d05d2534285,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6192320247852036936, guid: 704f15fa54b104dc29979d05d2534285,
         type: 3}
