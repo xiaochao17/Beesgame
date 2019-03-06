@@ -1,2 +1,0 @@
-# Beesgame
-game jam
